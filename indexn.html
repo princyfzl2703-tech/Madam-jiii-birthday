@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Little Secret...</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="stylen.css">
+
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<div class="container">
+
+    <!-- Lock Icon -->
+    <div class="lock">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" viewBox="0 0 24 24">
+
+            <path d="M7 10V7a5 5 0 1110 0v3"
+                  stroke="#F8E8C8"
+                  stroke-width="1.8"
+                  stroke-linecap="round"/>
+
+            <rect
+                x="5"
+                y="10"
+                width="14"
+                height="10"
+                rx="2"
+                stroke="#F8E8C8"
+                stroke-width="1.8"/>
+
+            <circle
+                cx="12"
+                cy="15"
+                r="1.2"
+                fill="#F8E8C8"/>
+
+        </svg>
+
+    </div>
+
+    <p class="subtitle">
+        A little secret awaits...
+    </p>
+
+    <h1>
+        ENTER PASSCODE
+    </h1>
+
+    <!-- Password Circles -->
+
+    <div class="password-display">
+
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+
+    </div>
+
+    <!-- Keypad -->
+
+    <div class="keypad">
+
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+
+        <button onclick="erase()">⌫</button>
+        <button onclick="press('0')">0</button>
+        <button onclick="checkPassword()">✓</button>
+
+    </div>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="scriptn.js"></script>
+
+</body>
+</html>
